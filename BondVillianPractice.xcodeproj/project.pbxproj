@@ -14,6 +14,8 @@
 		980FB9C91F8D386500F5C702 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 980FB9C71F8D386500F5C702 /* LaunchScreen.storyboard */; };
 		980FB9D41F8D386500F5C702 /* BondVillianPracticeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980FB9D31F8D386500F5C702 /* BondVillianPracticeTests.swift */; };
 		980FB9DF1F8D386600F5C702 /* BondVillianPracticeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980FB9DE1F8D386600F5C702 /* BondVillianPracticeUITests.swift */; };
+		980FB9ED1F8D437500F5C702 /* Villian.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980FB9EC1F8D437500F5C702 /* Villian.swift */; };
+		9845CEF81F8EB400000CD801 /* VillianDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9845CEF71F8EB400000CD801 /* VillianDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		980FB9DA1F8D386600F5C702 /* BondVillianPracticeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BondVillianPracticeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		980FB9DE1F8D386600F5C702 /* BondVillianPracticeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BondVillianPracticeUITests.swift; sourceTree = "<group>"; };
 		980FB9E01F8D386600F5C702 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		980FB9EC1F8D437500F5C702 /* Villian.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Villian.swift; sourceTree = "<group>"; };
+		9845CEF71F8EB400000CD801 /* VillianDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VillianDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,8 +102,8 @@
 			isa = PBXGroup;
 			children = (
 				980FB9BE1F8D386500F5C702 /* AppDelegate.swift */,
-				980FB9C01F8D386500F5C702 /* ViewController.swift */,
-				980FB9C21F8D386500F5C702 /* Main.storyboard */,
+				9845CEF91F8EB429000CD801 /* Controller */,
+				9845CEFA1F8EB436000CD801 /* View */,
 				980FB9C51F8D386500F5C702 /* Assets.xcassets */,
 				980FB9C71F8D386500F5C702 /* LaunchScreen.storyboard */,
 				980FB9CA1F8D386500F5C702 /* Info.plist */,
@@ -123,6 +127,24 @@
 				980FB9E01F8D386600F5C702 /* Info.plist */,
 			);
 			path = BondVillianPracticeUITests;
+			sourceTree = "<group>";
+		};
+		9845CEF91F8EB429000CD801 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				9845CEF71F8EB400000CD801 /* VillianDetailViewController.swift */,
+				980FB9EC1F8D437500F5C702 /* Villian.swift */,
+				980FB9C01F8D386500F5C702 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		9845CEFA1F8EB436000CD801 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				980FB9C21F8D386500F5C702 /* Main.storyboard */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,8 +281,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				980FB9ED1F8D437500F5C702 /* Villian.swift in Sources */,
 				980FB9C11F8D386500F5C702 /* ViewController.swift in Sources */,
 				980FB9BF1F8D386500F5C702 /* AppDelegate.swift in Sources */,
+				9845CEF81F8EB400000CD801 /* VillianDetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -427,6 +451,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4FX69YPBM3;
 				INFOPLIST_FILE = BondVillianPractice/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.yugandharalad.BondVillianPractice;
@@ -441,6 +466,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4FX69YPBM3;
 				INFOPLIST_FILE = BondVillianPractice/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.yugandharalad.BondVillianPractice;
